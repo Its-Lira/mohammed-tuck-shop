@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Order - Mohammed's Grocery Tuck Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo" class="logo">
+    <nav>
+      <a href="home.html">Home</a>
+      <a class="active" href="order.html">Order</a>
+      <a href="summary.html">Order Summary</a>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+          
+  <label>Customer Surname:<br>
+    <input type="text" name="surname" id="surname" maxlength="20" required>
+  </label><br>
+
+  
+  <label>Customer Name:<br>
+    <input type="text" name="name" id="name" maxlength="20" required>
+  </label><br>
+
+  
+  <label>Contact Number:<br>
+    <input type="tel" name="contact" id="contact" maxlength="10" pattern="[0-9]{10}"title="Enter 10-digit number" required>
+  </label><br><br>
+  
+  <label>product name:<br>
+    <select name="product" id="product" required>
+      <option value="Dairy">Dairy </option>
+      <option value="Toiletries">Toiletries </option>
+      <option value="Meat">Meat </option>
+      <option value="Snacks">Snacks </option>
+      <option value="Fruits">Fruits </option>
+      <option value="Vegetables">Vegetables</option>
+
+      </select>             
+    </label><br>
+    <label>quantity:<br><input type="number" name="quantity" id="quantity"></label><br><br>
+      
+      <button type="button" onclick="calculateTotal()">calculateTotal</button>
+      <button type="button" onclick="clearForm()">Clear</button>
+      <button type="button" onclick="exitApp()">Exit</button>
+
+      <div id="message"></div>
+      <div id="result"></div>
+    </form>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>

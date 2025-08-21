@@ -1,0 +1,77 @@
+ /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:lightgrey;
+    color: purple;
+}
+
+/* Header styling */
+header {
+    background-color: silver;
+    padding: 15px 30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo placeholder */
+.logo {
+
+
+    width: 140px;
+    height: auto;
+}
+
+/* Navigation buttons */
+nav a {
+  text-decoration: none;
+  background-color:beige;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  color:palevioletred;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: lightgray;
+}
+nav a.active {
+    background-color:gray;
+    color: white;
+}
+
+/* Main content area*/
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Product images */
+main img {
+    width: 150px;
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    display:grid;
+}
+
+/* Footer */
+footer {
+    background-color:white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 14px;
+
+}
