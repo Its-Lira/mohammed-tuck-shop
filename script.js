@@ -70,7 +70,8 @@ function clearForm() {
 function exitApp() {
   let confirmExit = confirm("are you sure you want to exit");
   if (confirmExit) {
-    window.location.href = "home.html";
+    window.location.href = "index.html";
     alert("thank you for using Mohammrd Tuck Shop!");
   }
+
 }
